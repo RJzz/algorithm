@@ -1,8 +1,5 @@
 ﻿  test.cpp
-c:\users\任广杰\documents\visual studio 2015\projects\alogrithm\alogrithm\divide.h(2): warning C4005: “INT_MAX”: 宏重定义
-  c:\program files (x86)\microsoft visual studio 14.0\vc\include\limits.h(35): note: 参见“INT_MAX”的前一个定义
-c:\users\任广杰\documents\visual studio 2015\projects\alogrithm\alogrithm\divide.h(3): warning C4005: “INT_MIN”: 宏重定义
-  c:\program files (x86)\microsoft visual studio 14.0\vc\include\limits.h(34): note: 参见“INT_MIN”的前一个定义
-c:\users\任广杰\documents\visual studio 2015\projects\alogrithm\alogrithm\divide.h(13): warning C4172: 返回局部变量或临时变量的地址: result
+c:\users\任广杰\documents\visual studio 2015\projects\alogrithm\alogrithm\dynamicprogramming.h(36): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+c:\users\任广杰\documents\visual studio 2015\projects\alogrithm\alogrithm\divide.h(11): warning C4172: 返回局部变量或临时变量的地址: result
   Alogrithm.vcxproj -> C:\Users\任广杰\documents\visual studio 2015\Projects\Alogrithm\Debug\Alogrithm.exe
   Alogrithm.vcxproj -> C:\Users\任广杰\documents\visual studio 2015\Projects\Alogrithm\Debug\Alogrithm.pdb (Partial PDB)

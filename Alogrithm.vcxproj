@@ -111,7 +111,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="divide.h" />
+    <ClInclude Include="dynamicprogramming.h" />
     <ClInclude Include="recursion.h" />
+    <ClInclude Include="strassen.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />

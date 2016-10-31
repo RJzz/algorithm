@@ -1,12 +1,10 @@
 #pragma once
-#define INT_MAX 0x7fffffff 
-#define INT_MIN 0x80000000
 int* maxSubArray(int* a, int low, int high);
 int* maxCrossSubArray(int* a, int low, int mid, int high);
 int* maxArray(int* a, int n, int &lowRe, int &highRe);
 
 
-/*最大子数组问题*/
+/*最大子数组问题,分治求解*/
 int* maxSubArray(int* a, int low, int high) {
 	if (low == high) {
 		int result[] = {low, high, *(a + low)};
@@ -74,7 +72,7 @@ int* maxCrossSubArray(int* a, int low, int mid, int high) {
 }
 
 
-/*暴力求解，找一个最大的数组返回，算法的时间复杂度是n的平方*/
+/*最大子数组暴力求解，找一个最大的数组返回，算法的时间复杂度是n的平方*/
 int* maxArray(int* a, int n, int &lowRe, int &highRe) {
 	int low = 0, high = 0;
 	int max = 0;
@@ -105,6 +103,24 @@ int* maxArray(int* a, int n, int &lowRe, int &highRe) {
 	return big;
 }
 
+
+/*最大子数组线性时间求解*/
+int maxLinearArray(int *a, int &low, int &high, int n) {
+	int sum = 0;//最大子数组的和
+	int curSum = 0;//当前的数组和
+	for (int i = 0; i < n; ++i) {
+		curSum += *(a + i);
+		if (sum < curSum) {
+			sum = curSum;
+			high = i + 1;	
+		}
+		if (curSum < 0) {
+			curSum = 0;
+			low = i + 2;
+		}
+	}
+	return sum;
+}
 
 //二分搜索
 int binarySearch(int *a, int x, int left, int right) {

@@ -21,6 +21,12 @@
     <ClInclude Include="divide.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="strassen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamicprogramming.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">

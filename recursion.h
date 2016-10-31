@@ -15,16 +15,16 @@ void perm(int *a, int k, int m) {
 		for (int i = 0; i < m; ++i) {
 			std::cout << *(a + i) << "\t";
 		}
-		std::cout << "µİ¹é·µ»Ø" << std::endl;
-		std::cout << std::endl;
+		//std::cout << "µİ¹é·µ»Ø" << std::endl;
+		//std::cout << std::endl;
 	}
 	else {
 		for (int i = k; i < m; ++i) {
 			recursion::swap(a, k, i);
-			for (int j = 0; j < 4; ++j) {
+	/*		for (int j = 0; j < 4; ++j) {
 				std::cout << *(a + j) << "\t";
 			}
-			std::cout << "µİ¹éÇ°k=" << k << "i=" << i << std::endl;
+			std::cout << "µİ¹éÇ°k=" << k << "i=" << i << std::endl;*/
 			perm(a, k + 1, m);
 	
 			recursion::swap(a, k, i);
